@@ -1,0 +1,138 @@
+h1 {
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #145270;
+    letter-spacing: normal;
+    word-spacing: normal;
+    
+}
+
+#paragraph1 {
+    font-family: arial;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    line-height: 22px;
+    
+}
+
+.quote1{
+    background-color: rgba(203, 227, 236, 0.623);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: 80px;
+}
+
+.normal-h2 {
+    background-color: blue;
+}
+
+h2 {
+    font-family: arial, "Times New Roman";
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+aside {
+    background-color: burlywood;
+}
+
+.boxes {
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* Instead of the two lines above, I could have written [flex-flow: row wrap] for the same results */
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  
+}
+        .item {
+            width: 300px;
+            height: 100px;
+            background-color: #cccccc;
+            border: solid black; 
+            margin: 30px;
+        }
+
+        /*flex-grow; flex-shrink; flex-basis; all three can be defined by one function: >> flex: x, y, z: grow, shrink, basis*/
+
+
+.images h2 {
+    background: linear-gradient(to right, #2980b9, #2c3e50);
+    color: blanchedalmond;
+    width: 550px;
+    border: 2px solid teal;
+    border-top-color: red;
+    border-bottom-color: green;
+    border-right-color: yellow;
+    padding: 6px;
+    display: inline-block;
+}
+
+.button1 {
+    font-size: 40px;
+    border: 2px solid magenta;
+    background-color: white;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+
+}
+
+.picz {
+    width: 320px;
+    height: 220px;
+    border: solid 2px black;
+    border-left-width: 10px;
+    border-right-style: hidden; 
+    padding: 30px;
+    padding-left: 40px;
+/*padding: top, right, bottom, left - if you enter 4 values.
+  padding: x, y - if you enter 2 values, the first one is for top and bottom, second is for right and left */
+    margin: 20px;
+    box-sizing: border-box;
+/*box-sizing: border-box >> defines the total size of the box, without adding padding and border thickness etc. if you write "context-box" instead (thats the default), then the size of the content box stays the same while other things are added on top e.g. border/padding width during hover etc.*/
+    
+}
+
+img:hover{
+    border: 5px solid brown;
+    border-left-width: 10px;
+    border-right-style: solid; 
+    padding: 30px;
+    padding-left: 40px;
+}
+
+
+
+
+div button {
+    width: 300px;
+    height: 100px;
+    font-size: 25px;
+    background-color: olive;
+    border: 2px dashed black;
+    padding:15px;
+    align-content: center;
+}
+
+div button:nth-of-type(1) {
+    background-clip: content-box;
+}
+
+div button:nth-of-type(2) {
+    background-clip: padding-box;
+}
+
+div button:nth-of-type(3) {
+    background-clip: border-box;
+}
